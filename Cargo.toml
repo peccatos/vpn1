@@ -1,0 +1,19 @@
+[package]
+name = "peccatos_vpn"
+version = "0.1.0"
+edition = "2024"
+
+[dependencies]
+tracing = "0.1.44"
+tracing-subscriber = "0.3.23"
+opentelemetry = "0.33.1"
+#opentelemetry-otlp = "0.33.1"
+#opentelemetry-xray = "0.1.5"
+#xray-core = "0.2.1"
+xrat-sdk = "0.28" 
+tokio = { version = "1", features = ["full"] }
+anyhow = "1.0"     
+reqwest = { version = "0.12", features = ["socks", "json"] }
+serde_json = "1.0"
+serde = { version = "1.0", features = ["derive"] }
+urlencoding = "2.1" # Для корректного URL-кодирования параметров
